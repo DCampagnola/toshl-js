@@ -1,0 +1,57 @@
+{
+  "name": "toshl",
+  "version": "1.0.0",
+  "description": "This is an unofficial Toshl api wrapper for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DCampagnola/toshl-js.git"
+  },
+  "keywords": [
+    "toshl",
+    "api",
+    "finance"
+  ],
+  "author": "DCampagnola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DCampagnola/toshl-js/issues"
+  },
+  "homepage": "https://github.com/DCampagnola/toshl-js#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.0.0",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "rimraf": "^3.0.2",
+    "jest": "^27.2.5",
+    "prettier": "^2.3.2",
+    "ts-loader": "^9.2.3",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.3.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
