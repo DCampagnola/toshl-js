@@ -1,6 +1,7 @@
 import { ToshlAccountsClient } from '../api/accounts/client';
 import axios, { AxiosInstance } from 'axios';
 import { ToshlBudgetsClient } from '../api/budgets/client';
+import { ToshlCategoriesClient } from '../api/categories/client';
 
 export interface ToshlClientConfig {
   apiKey: string;
@@ -21,9 +22,12 @@ export class ToshlClient {
     });
     this.accounts = new ToshlAccountsClient(this.axiosInstance);
     this.budgets = new ToshlBudgetsClient(this.axiosInstance);
+    this.categories = new ToshlCategoriesClient(this.axiosInstance);
   }
 
   accounts: ToshlAccountsClient;
 
   budgets: ToshlBudgetsClient;
+
+  categories: ToshlCategoriesClient;
 }
