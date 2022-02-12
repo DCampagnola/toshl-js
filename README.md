@@ -9,9 +9,12 @@ This api is work in progress, so it is not stable. Contributions are welcome
 
 not published yet
 
-[comment]: <> (    npm install --save toshl-js-api)
+    npm install --save toshl-js
 
 ## Usage
+
+    import { ToshlClient } from 'toshl-js';
+    var api = new ToshlClient('<your-api-key>');
 
 ## License
 

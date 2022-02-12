@@ -21,7 +21,7 @@
     "finance"
   ],
   "author": "DCampagnola",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DCampagnola/toshl-js/issues"
   },
