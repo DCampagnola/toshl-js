@@ -4,7 +4,12 @@
   "description": "This is an unofficial Toshl api wrapper for JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public"
   },
   "repository": {
     "type": "git",
