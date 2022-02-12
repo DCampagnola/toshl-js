@@ -1,5 +1,5 @@
 {
-  "name": "toshl",
+  "name": "toshl-js",
   "version": "1.0.0",
   "description": "This is an unofficial Toshl api wrapper for JavaScript",
   "main": "index.js",
